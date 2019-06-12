@@ -95,26 +95,16 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 //Code Here
 
 function evenFinder(nums){
-  // console.log(nums)
   let nums2 = nums.slice();
-  //console.log(nums2)
-  for (let i = 0; i < nums.length; i++){    // loop through the array
-    //console.log(nums2[i])                 // check if loop is working correctly
-    if (nums2[i] % 2 === 0){                     // if the number isnt even                           // remove the number from the array      
-    console.log(i)
+  for (let i = 0; i < nums.length; i++){    // loop through every element in the array
+    if (nums2[i] % 2 === 0){                // if the number is even, do nothing                          
     } else {
-      nums2.splice(i, 1)
+      nums2.splice(i, 1)                    // else remove the number from the array
     }
   }
   return nums2;
 }
-evenFinder(nums);
-// function evenFinder(){
-  // return nums;
-// }
-
-
-
+//evenFinder(nums);
 
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
